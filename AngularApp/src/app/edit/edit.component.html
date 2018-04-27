@@ -1,0 +1,17 @@
+<h4>Edit a restaurant</h4>
+<div>
+    <form (submit)="check()">
+        Restaurant name:
+        <br>
+        <input type="text" [(ngModel)]="rest.name" name="rest.name">
+        <br>
+        Cuisine:
+        <br>
+        <input type="text" [(ngModel)]="rest.cuisine" name="rest.cuisine">
+        <br>
+        <button id = "CancelButton"[routerLink]="['']">Cancel</button>
+        <input id = "AddRestButton" type="submit" value="Edit">
+      </form>
+
+</div>
+<p *ngFor="let messages of array">{{messages}}</p>

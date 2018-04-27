@@ -1,0 +1,20 @@
+<button id = "four" [routerLink]= "['new']">New Restaurant</button>
+
+<table>
+  <tr>
+    <th>Restaurant</th>
+    <th>Cuisine</th> 
+    <th>Actions Available</th>
+  </tr>
+  <tr>
+  <tr *ngFor = "let rest of rests">
+    <td>{{rest.name}}</td>
+    <td>{{rest.cuisine}}</td>
+    <td>
+      <button id= "one" [routerLink]= "['reviews', rest._id]">Read Reviews</button>
+      <button id= "two" [routerLink]= "['edit', rest._id]">Update</button>
+      <button id="three" (click)= "deleteRest(rest._id)">Delete</button>
+
+    </td>
+  </tr>
+</table>

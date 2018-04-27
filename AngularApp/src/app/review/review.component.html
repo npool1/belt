@@ -1,0 +1,17 @@
+<h4>Reviews for {{rest.name}}</h4>
+<button id= "one" [routerLink]= "['/write', rest._id]">New Review</button>
+<table>
+        <tr>
+          <th>Name</th>
+          <th>Stars</th> 
+          <th>Description</th>
+        </tr>
+        <tr>
+        <tr *ngFor = "let review of rest.reviews">
+          <td>{{review.name}}</td>
+          <td>{{review.stars}}</td>
+          <td>{{review.review}}</td>
+        </tr>
+      </table>
+
+

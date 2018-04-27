@@ -1,0 +1,27 @@
+<h4>Write a review for {{rest.name}}</h4>
+<div>
+    <form (submit)="check()">
+        Your name:
+        <br>
+        <input type="text" [(ngModel)]="review.name" name="name">
+        <br>
+        Stars:
+        <br>
+        
+        <select [(ngModel)]="review.stars" name = "stars">
+            <option value="1">1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+          <br>
+          Your review:
+        <input type="text" [(ngModel)]="review.review" name="review">
+        <br>
+        <button id = "CancelButton"[routerLink]="['']">Cancel</button>
+        <input id = "AddReviewButton" type="submit" value="Submit">
+      </form>
+
+</div>
+<p *ngFor="let messages of array">{{messages}}</p>

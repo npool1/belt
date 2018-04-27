@@ -1,0 +1,20 @@
+th {
+    color: white;
+    background-color: gray;
+}
+
+#one{
+    background-color: purple;
+}
+#two{
+    background-color: yellow;
+}
+#three{
+    background-color: red;
+}
+#four{
+    background-color: green;
+}
+table {
+    border: solid 1px black;
+}
